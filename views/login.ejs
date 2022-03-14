@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="C:/Users/USER/Desktop/logo-avistos.png">
+  </head>
+  <body>
+    <div class="main">
+      <h1 style="color:rgb(44, 33, 9);">Avistos Innovative Solutions</h1>
+      <h2>SIGN IN TO YOUR ACCOUNT</h2>
+      <% if (messages) { %>
+      <p><%= messages.error %></p>
+      <% } %>
+      <form action="/login" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="username@email.com"
+        />
+        <input type="password" name="password" placeholder="* * * * * *" />
+        <button>SIGN IN</button>
+      </form>
+    </div>
+    
+    <div class="container">
+
+      <div class="starter-template" >
+
+        <h1 style="color:rgba(224, 221, 214);">Avistos Innovative Solutions</h1>
+        <!-- <p class="lead" style="color:rgb(224, 221, 214);">Avistos  Annotation Tool.<br> v1 -  Image Annotation Tool</p> -->
+      </div>
+
+  </body>
+</html>
